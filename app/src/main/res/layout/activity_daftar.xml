@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daftar">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="142dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/anton"
+        android:text="Pendaftaran"
+        android:textColor="@color/black"
+        android:textSize="12pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/dafNama"
+        android:layout_width="375dp"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/tvnama"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <EditText
+        android:id="@+id/dafAlamat"
+        android:layout_width="375dp"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/Alamat"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dafNama"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dafAlamat"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agama"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-Laki"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/dafAlamat"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="460dp"
+        android:text="Perempuan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toEndOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/dafAlamat"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="36dp"
+        android:text="Islam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Kristen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toEndOf="@+id/radioButton3"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buddha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <RadioButton
+        android:id="@+id/radioButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konghucu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toEndOf="@+id/radioButton5"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton4"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <EditText
+        android:id="@+id/dafEmail"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="196dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/eEmail"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton5"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <EditText
+        android:id="@+id/dafPassword"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/ePass"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dafEmail"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <EditText
+        android:id="@+id/dafRePassword"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/erepass"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dafPassword"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <Button
+        android:id="@+id/rbtnbatal"
+        android:layout_width="136dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnBatal"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dafRePassword"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/rbtndaftar"
+        android:layout_width="141dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnDaftar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toEndOf="@+id/rbtnbatal"
+        app:layout_constraintTop_toBottomOf="@+id/dafRePassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
